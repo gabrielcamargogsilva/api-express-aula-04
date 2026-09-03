@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import produtosData from './data.json' with { type: 'json' };
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -7,22 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-let produtos = [
-    {
-        id: 1,
-        nome: 'Caderno de projetos',
-        categoria: 'Papelaria',
-        preco: 29.9,
-        disponivel: true
-    },
-    {
-        id: 2,
-        nome: 'Garrafa reutilizável',
-        categoria: 'Acessórios',
-        preco: 49.9,
-        disponivel: true
-    }
-];
+let produtos = produtosData;
 
 app.get('/', (req, res) => {
     res.json({

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nome": "Caderno de projetos",
+        "categoria": "Papelaria",
+        "preco": 29.9,
+        "disponivel": true
+    },
+    {
+        "id": 2,
+        "nome": "Caneta esferográfica",
+        "categoria": "Papelaria",
+        "preco": 3.5,
+        "disponivel": true
+    },
+    {
+        "id": 3,
+        "nome": "Mochila escolar",
+        "categoria": "Acessórios",
+        "preco": 79.9,
+        "disponivel": false
+    },
+    {
+        "id": 4,
+        "nome": "Lápis de cor",
+        "categoria": "Papelaria",
+        "preco": 15.0,
+        "disponivel": true
+    },
+    {
+        "id": 5,
+        "nome": "Estojo organizador",
+        "categoria": "Acessórios",
+        "preco": 25.0,
+        "disponivel": true
+    }
+]
