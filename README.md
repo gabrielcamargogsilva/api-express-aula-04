@@ -17,6 +17,34 @@ npm run dev
 
 Servidor padrão: `http://localhost:3000`
 
+## Importar a collection no Postman
+
+Siga os passos abaixo para visualizar e testar as rotas da API:
+
+1. Abra o terminal na pasta do projeto.
+2. Instale as dependências, caso ainda não tenha feito isso:
+
+  ```bash
+  npm install
+  ```
+
+3. Inicie o servidor:
+
+  ```bash
+  npm start
+  ```
+
+  Mantenha esse terminal aberto. A API ficará disponível em `http://localhost:3000`.
+
+4. Abra o Postman.
+5. Clique em **Import**, no canto superior esquerdo.
+6. Selecione **Files** e escolha o arquivo `postman_collection.json` que está na pasta deste projeto.
+7. Confirme a importação. A collection **API de Produtos** aparecerá na barra lateral, em **Collections**.
+8. Expanda a collection e clique em uma das requisições para visualizar o método HTTP, a URL, os cabeçalhos e o corpo da requisição.
+9. Clique em **Send** para executar a requisição. O resultado aparecerá na área **Response**, na parte inferior da tela.
+
+Para testar a criação ou atualização de um produto, abra a aba **Body** e confirme que a opção **raw** e o formato **JSON** estão selecionados. Para a busca filtrada, abra **Params**, habilite o parâmetro `q` e informe o termo desejado.
+
 ## Rotas
 
 | Método | Rota | Descrição |
